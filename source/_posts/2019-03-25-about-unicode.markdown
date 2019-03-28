@@ -28,3 +28,9 @@ tags:
 - 如果`U<0x10000`，U的`UTF-16`编码就是U对应的16位无符号整数（为书写简便，下文将16位无符号整数记作`WORD`）
 - 如果`U≥0x10000`，我们先计算`U’=U-0x10000`，然后将`U’`写成二进制形式：`yyyy yyyy yyxx xxxx xxxx`，U的`UTF-16`编码（二进制）就是：`110110yyyyyyyyyy 110111xxxxxxxxxx`
 - 为了将一个`WORD`的`UTF-16`编码与两个`WORD`的`UTF-16`编码区分开来，`Unicode`编码的设计者将`0xD800-0xDFFF`保留下来，并称为代理区（Surrogate）
+
+
+### JavaScript 相关
+
+- `ES6` 新增的 `codePointAt()、String.fromCodePoint()、for...of` 能够正确识别32位的`UTF-16`编码
+- 所对应的旧接口依次是 `charAt()、String.fromCharCode()、普通 for 循环`，它们则没有这样的能力，只能识别16位的`UTF-16`编码
