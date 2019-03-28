@@ -354,7 +354,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-27 00:00:56" itemprop="dateModified" datetime="2019-03-27T00:00:56+08:00">2019-03-27</time>
+                <time title="Modified: 2019-03-28 19:17:53" itemprop="dateModified" datetime="2019-03-28T19:17:53+08:00">2019-03-28</time>
               
             
           </span>
@@ -412,6 +412,10 @@
 <li>如果<code>U&lt;0x10000</code>，U的<code>UTF-16</code>编码就是U对应的16位无符号整数（为书写简便，下文将16位无符号整数记作<code>WORD</code>）</li>
 <li>如果<code>U≥0x10000</code>，我们先计算<code>U’=U-0x10000</code>，然后将<code>U’</code>写成二进制形式：<code>yyyy yyyy yyxx xxxx xxxx</code>，U的<code>UTF-16</code>编码（二进制）就是：<code>110110yyyyyyyyyy 110111xxxxxxxxxx</code></li>
 <li>为了将一个<code>WORD</code>的<code>UTF-16</code>编码与两个<code>WORD</code>的<code>UTF-16</code>编码区分开来，<code>Unicode</code>编码的设计者将<code>0xD800-0xDFFF</code>保留下来，并称为代理区（Surrogate）</li>
+</ul>
+<h3 id="JavaScript-相关"><a href="#JavaScript-相关" class="headerlink" title="JavaScript 相关"></a>JavaScript 相关</h3><ul>
+<li><code>ES6</code> 新增的 <code>codePointAt()、String.fromCodePoint()、for...of</code> 能够正确识别32位的<code>UTF-16</code>编码</li>
+<li>所对应的旧接口依次是 <code>charAt()、String.fromCharCode()、普通 for 循环</code>，它们则没有这样的能力，只能识别16位的<code>UTF-16</code>编码</li>
 </ul>
 
           
