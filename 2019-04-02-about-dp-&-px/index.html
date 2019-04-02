@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="px 即像素，1px 代表屏幕上一个物理的像素点   同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi），它们对应的 dp 到px 的系数分别为 0.75、1、1.5 和">
+  <meta name="description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
 <meta name="keywords" content="OS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于常见的像素单位">
 <meta property="og:url" content="http://picknight.cn/2019-04-02-about-dp-&-px/index.html">
 <meta property="og:site_name" content="Pick&#39;s Blog">
-<meta property="og:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi），它们对应的 dp 到px 的系数分别为 0.75、1、1.5 和">
+<meta property="og:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-02T15:01:21.731Z">
+<meta property="og:updated_time" content="2019-04-02T15:32:36.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于常见的像素单位">
-<meta name="twitter:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi），它们对应的 dp 到px 的系数分别为 0.75、1、1.5 和">
+<meta name="twitter:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  dpi 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
 
 
 
@@ -336,7 +336,7 @@
                 
               
 
-              <time title="Created: 2019-04-02 22:51:29 / Modified: 23:01:21" itemprop="dateCreated datePublished" datetime="2019-04-02T22:51:29+08:00">2019-04-02</time>
+              <time title="Created: 2019-04-02 22:51:29 / Modified: 23:32:36" itemprop="dateCreated datePublished" datetime="2019-04-02T22:51:29+08:00">2019-04-02</time>
             
 
             
@@ -379,21 +379,25 @@
 <p>即像素，<code>1px</code> 代表屏幕上一个物理的像素点</p>
 </blockquote>
 <ul>
-<li>同样 <code>100px</code> 的图片，在不同手机上显示的实际大小可能不同</li>
+<li>由于像素密度不同，同样 <code>100px</code> 的图片，在不同手机上显示的实际大小可能不同</li>
 </ul>
 <h3 id="dpi"><a href="#dpi" class="headerlink" title="dpi"></a>dpi</h3><blockquote>
 <p>像素密度的单位 <code>dpi</code> 是 <code>Dots Per Inch</code> 的缩写，即每英寸像素数量</p>
 </blockquote>
 <ul>
-<li><code>Android</code> 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi），它们对应的 <code>dp</code> 到<code>px</code> 的系数分别为 0.75、1、1.5 和 2，这个系数乘以 <code>dp</code> 长度就是像素数 <code>px</code></li>
+<li><code>Android</code> 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi）</li>
+<li>它们对应的 <code>dp</code> 到<code>px</code> 的系数分别为 0.75、1、1.5 和 2，这个系数乘以 <code>dp</code> 长度就是像素数 <code>px</code></li>
 </ul>
-<h3 id="dip"><a href="#dip" class="headerlink" title="dip"></a>dip</h3><blockquote>
+<h3 id="dp-dip"><a href="#dp-dip" class="headerlink" title="dp(dip)"></a>dp(dip)</h3><blockquote>
 <p><code>Density independent pixels</code>，设备无关像素</p>
 </blockquote>
 <ul>
-<li>与dp完全相同，只是名字不同而已。在早期的Android版本里多使用dip，后来为了与sp统一就建议使用dp这个名字了</li>
-<li>换算公式如下： <code>dp = (DPI/160) px = density px</code></li>
-<li>因为第一款 <code>Android</code> 设备（HTC的T-Mobile G1）是属于 <code>160dpi</code> 的，所以 <code>标准dpi = 160</code></li>
+<li><code>dp</code> 与 <code>dip</code> 完全相同，只是名字不同而已。在早期的 <code>Android</code> 版本里多使用 <code>dip</code>，后来为了与 <code>sp</code> 统一就建议使用 <code>dp</code> 这个名字了</li>
+<li>与 <code>px</code> 换算公式如下： <code>dp = (DPI/160) px = density px</code></li>
+</ul>
+<h3 id="为什么使用-160dpi-作为标准"><a href="#为什么使用-160dpi-作为标准" class="headerlink" title="为什么使用 160dpi 作为标准"></a>为什么使用 <code>160dpi</code> 作为标准</h3><ul>
+<li>因为第一款 <code>Android</code> 设备（HTC的T-Mobile G1）是属于 <code>160dpi</code> 的</li>
+<li>方便换算，其余三个分别是 <code>160dpi</code> 的 <code>0.75、1.5、2</code> 倍，若使用 <code>240dpi</code> 则会出现无限小数</li>
 </ul>
 
       
@@ -563,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#px"><span class="nav-number">1.</span> <span class="nav-text">px</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dpi"><span class="nav-number">2.</span> <span class="nav-text">dpi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dip"><span class="nav-number">3.</span> <span class="nav-text">dip</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#px"><span class="nav-number">1.</span> <span class="nav-text">px</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dpi"><span class="nav-number">2.</span> <span class="nav-text">dpi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dp-dip"><span class="nav-number">3.</span> <span class="nav-text">dp(dip)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用-160dpi-作为标准"><span class="nav-number">4.</span> <span class="nav-text">为什么使用 160dpi 作为标准</span></a></li></ol></div>
             
 
           </div>
