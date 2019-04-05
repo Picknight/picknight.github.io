@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "git 工作流"
+title:  "Git workflow"
 subtitle: 'git'
 author: "Pick"
 tags:
