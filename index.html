@@ -337,7 +337,7 @@
                 
               
 
-              <time title="Created: 2019-04-05 22:39:53 / Modified: 23:47:09" itemprop="dateCreated datePublished" datetime="2019-04-05T22:39:53+08:00">2019-04-05</time>
+              <time title="Created: 2019-04-05 22:39:53 / Modified: 23:48:39" itemprop="dateCreated datePublished" datetime="2019-04-05T22:39:53+08:00">2019-04-05</time>
             
 
             
@@ -409,6 +409,7 @@
 <li>最大原则叫做”上游优先”（<code>upsteam first</code>），即只存在一个主分支 <code>master</code>，它是所有其他分支的”上游”。只有上游分支采纳的代码变化，才能应用到其他分支</li>
 <li>对于”持续发布”的项目，它建议在 <code>master</code> 分支以外，再建立不同的环境分支。比如，”开发环境”的分支是 <code>master</code>，”预发环境”的分支是 <code>pre-production</code>，”生产环境”的分支是 <code>production</code></li>
 <li>开发分支是预发分支的”上游”，预发分支又是生产分支的”上游”。代码的变化，必须由”上游”向”下游”发展</li>
+<li>对于”版本发布”的项目，建议的做法是每一个稳定版本，都要从 <code>master</code> 分支拉出一个分支，比如 <code>2-3-stable</code>、<code>2-4-stable</code> 等等</li>
 </ul>
 
           
