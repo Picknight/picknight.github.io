@@ -337,7 +337,7 @@
                 
               
 
-              <time title="Created: 2019-04-05 22:39:53 / Modified: 23:48:39" itemprop="dateCreated datePublished" datetime="2019-04-05T22:39:53+08:00">2019-04-05</time>
+              <time title="Created: 2019-04-05 22:39:53 / Modified: 23:53:34" itemprop="dateCreated datePublished" datetime="2019-04-05T22:39:53+08:00">2019-04-05</time>
             
 
             
@@ -386,7 +386,7 @@
 <li><code>master</code> 用于存放对外发布的版本，任何时候在这个分支拿到的，都是稳定的分布版</li>
 <li><code>develop</code> 用于日常开发，存放最新的开发版</li>
 <li><code>release</code> 分支源于 <code>develop</code> 分支，用于发布之前（即合并到 <code>master</code> 之前）的预发布测试，结束以后必须合入 <code>develop</code> 和 <code>master</code> 分支</li>
-<li>一旦完成开发，三个短期就会被合并进 <code>develop</code> 或 <code>master</code>，然后被删除</li>
+<li>一旦完成开发，三个短期分支就会被合并进 <code>develop</code> 或 <code>master</code>，然后被删除</li>
 <li>优点：清晰可控</li>
 <li>缺点：相对复杂，需要同时维护两个长期分支。对于有”持续发布”需求的项目，代码一有变动就需要部署一次，<code>develop</code> 需要频繁地合入 <code>master</code>，导致这两者的差别不大，没必要维护两个长期分支</li>
 </ul>
@@ -400,7 +400,7 @@
 <li>第三步：<code>Pull Request</code> 既是一个通知，让别人注意到你的请求，又是一种对话机制，大家一起评审和讨论你的代码。对话过程中，你还可以不断提交代码</li>
 <li>第四步：你的 <code>Pull Request</code> 被接受，合并进 <code>master</code>，重新部署后，原来你拉出来的那个分支就被删除。（先部署再合并也可）</li>
 <li>优点：简单，对于”持续发布”的产品是最合适的流程</li>
-<li>缺点：假设是合入到 <code>master</code> 就能立刻发布，没有考虑发布窗口，需要另外新建一个 <code>production</code> 分支跟踪线上版本</li>
+<li>缺点：假设了合入到 <code>master</code> 就能立刻发布，没有考虑发布窗口，往往需要另外新建一个 <code>production</code> 分支跟踪线上版本</li>
 </ul>
 <h3 id="Gitlab-flow"><a href="#Gitlab-flow" class="headerlink" title="Gitlab flow"></a>Gitlab flow</h3><blockquote>
 <p><code>Gitlab flow</code> 是 <code>Git flow</code> 与 <code>Github flow</code> 的综合。它吸取了两者的优点，既有适应不同开发环境的弹性，又有单一主分支的简单和便利</p>
