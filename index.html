@@ -337,7 +337,7 @@
                 
               
 
-              <time title="Created: 2019-04-25 14:41:28 / Modified: 14:45:48" itemprop="dateCreated datePublished" datetime="2019-04-25T14:41:28+08:00">2019-04-25</time>
+              <time title="Created: 2019-04-25 14:41:28 / Modified: 14:54:35" itemprop="dateCreated datePublished" datetime="2019-04-25T14:41:28+08:00">2019-04-25</time>
             
 
             
@@ -379,7 +379,7 @@
         
           
             <ul>
-<li><p>AMD (Asynchronous Module Definition)：发展自<code>CommonJS</code>规范，<code>RequireJS</code>是 AMD 规范的典型实现</p>
+<li><p><strong>AMD (Asynchronous Module Definition)</strong>：发展自<code>CommonJS</code>规范，<code>RequireJS</code>是 AMD 规范的典型实现</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">define([<span class="string">'jquery'</span>, <span class="string">'underscore'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">$, _</span>) </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">a</span> (<span class="params"></span>) </span>&#123;&#125;; <span class="comment">// 私有方法，没有被返回</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">b</span> (<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">c</span> (<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 暴露公共方法</span></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    b: b,</span><br><span class="line">    c: c</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>CMD (Common Module Definition)：发展自<code>CommonJS</code>规范，<code>Sea.js</code>是 CMD 规范的典型实现，唯一不被<code>webpack</code>所支持的模块化规范，其余都支持</p>
