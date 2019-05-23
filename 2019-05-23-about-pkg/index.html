@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  DPI 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
-<meta name="keywords" content="OS">
+  <meta name="description" content="版本号 指定版本：比如 1.2.2，遵循 大版本.次要版本.小版本 的格式规定，安装时只安装指定版本 波浪号（tilde）+指定版本：比如 ~1.2.2，表示安装 1.2.x 的最新版本（不低于 1.2.2 ），但是不安装1.3.x，也就是说安装时不改变大版本号和次要版本号 插入号（caret）+指定版本：比如 ˆ1.2.2 ，表示安装 1.x.x 的最新版本（不低于 1.2.2 ），但是不安装">
+<meta name="keywords" content="npm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见的像素单位">
-<meta property="og:url" content="http://picknight.cn/2019-04-02-about-dp-&-px/index.html">
+<meta property="og:title" content="package.json 冷知识">
+<meta property="og:url" content="http://picknight.cn/2019-05-23-about-pkg/index.html">
 <meta property="og:site_name" content="Pick&#39;s Blog">
-<meta property="og:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  DPI 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
+<meta property="og:description" content="版本号 指定版本：比如 1.2.2，遵循 大版本.次要版本.小版本 的格式规定，安装时只安装指定版本 波浪号（tilde）+指定版本：比如 ~1.2.2，表示安装 1.2.x 的最新版本（不低于 1.2.2 ），但是不安装1.3.x，也就是说安装时不改变大版本号和次要版本号 插入号（caret）+指定版本：比如 ˆ1.2.2 ，表示安装 1.x.x 的最新版本（不低于 1.2.2 ），但是不安装">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-04T15:47:12.001Z">
+<meta property="og:updated_time" content="2019-05-23T06:57:48.148Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常见的像素单位">
-<meta name="twitter:description" content="px 即像素，1px 代表屏幕上一个物理的像素点   由于像素密度不同，同样 100px 的图片，在不同手机上显示的实际大小可能不同  DPI 像素密度的单位 dpi 是 Dots Per Inch 的缩写，即每英寸像素数量   Android 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi） 它们对应的 dp 到px 的系数分别为 0.75">
+<meta name="twitter:title" content="package.json 冷知识">
+<meta name="twitter:description" content="版本号 指定版本：比如 1.2.2，遵循 大版本.次要版本.小版本 的格式规定，安装时只安装指定版本 波浪号（tilde）+指定版本：比如 ~1.2.2，表示安装 1.2.x 的最新版本（不低于 1.2.2 ），但是不安装1.3.x，也就是说安装时不改变大版本号和次要版本号 插入号（caret）+指定版本：比如 ˆ1.2.2 ，表示安装 1.x.x 的最新版本（不低于 1.2.2 ），但是不安装">
 
 
 
 
 
 
-  <link rel="canonical" href="http://picknight.cn/2019-04-02-about-dp-&-px/">
+  <link rel="canonical" href="http://picknight.cn/2019-05-23-about-pkg/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>常见的像素单位 | Pick's Blog</title>
+  <title>package.json 冷知识 | Pick's Blog</title>
   
 
 
@@ -293,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://picknight.cn/2019-04-02-about-dp-&-px/">
+    <link itemprop="mainEntityOfPage" href="http://picknight.cn/2019-05-23-about-pkg/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Pick">
@@ -310,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">常见的像素单位
+          <h1 class="post-title" itemprop="name headline">package.json 冷知识
 
               
             
@@ -336,24 +336,12 @@
                 
               
 
-              <time title="Created: 2019-04-02 22:51:29" itemprop="dateCreated datePublished" datetime="2019-04-02T22:51:29+08:00">2019-04-02</time>
+              <time title="Created: 2019-05-23 14:53:16 / Modified: 14:57:48" itemprop="dateCreated datePublished" datetime="2019-05-23T14:53:16+08:00">2019-05-23</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-04 23:47:12" itemprop="dateModified" datetime="2019-04-04T23:47:12+08:00">2019-04-04</time>
               
             
           </span>
@@ -387,30 +375,27 @@
       
 
       
-        <h3 id="px"><a href="#px" class="headerlink" title="px"></a>px</h3><blockquote>
-<p>即像素，<code>1px</code> 代表屏幕上一个物理的像素点</p>
+        <h2 id="版本号"><a href="#版本号" class="headerlink" title="版本号"></a>版本号</h2><ol>
+<li><strong>指定版本</strong>：比如 <code>1.2.2</code>，遵循 <code>大版本.次要版本.小版本</code> 的格式规定，安装时只安装指定版本</li>
+<li><strong>波浪号（tilde）+指定版本</strong>：比如 <code>~1.2.2</code>，表示安装 <code>1.2.x</code> 的最新版本（不低于 <code>1.2.2</code> ），但是不安装<code>1.3.x</code>，也就是说安装时不改变大版本号和次要版本号</li>
+<li><strong>插入号（caret）+指定版本</strong>：比如 <code>ˆ1.2.2</code> ，表示安装 <code>1.x.x</code> 的最新版本（不低于 <code>1.2.2</code> ），但是不安装 <code>2.x.x</code> ，也就是说安装时不改变大版本号。需要注意的是，如果大版本号为 <code>0</code> ，则插入号的行为与波浪号相同，这是因为此时处于开发阶段，即使是次要版本号变动，也可能带来程序的不兼容</li>
+<li><strong>latest</strong>：安装最新版本</li>
+</ol>
+<h2 id="安装指令"><a href="#安装指令" class="headerlink" title="安装指令"></a>安装指令</h2><ul>
+<li><code>npm i -S</code> 即 <code>npm install --save</code> 即写入 <code>dependencies</code>，项目运行所依赖的模块</li>
+<li><code>npm i -D</code> 即 <code>npm install --save-dev</code> 即写入 <code>devDependencies</code>，项目开发所依赖的模块</li>
+</ul>
+<h2 id="关于-package-lock-json-的更新"><a href="#关于-package-lock-json-的更新" class="headerlink" title="关于 package-lock.json 的更新"></a>关于 <code>package-lock.json</code> 的更新</h2><blockquote>
+<p>如果 <code>npm i xxx -D</code> 后只提交了 <code>package.json</code>，就会导致其他人拉取到的 <code>package.json</code> 和 <code>lock</code> 文件不同，那么执行 <code>npm i</code> 时会根据 <code>package.json</code> 中的版本号以及语义含义去下载最新的包，并更新 <code>lock</code>  </p>
 </blockquote>
-<ul>
-<li>由于像素密度不同，同样 <code>100px</code> 的图片，在不同手机上显示的实际大小可能不同</li>
+<h2 id="pkg-module-字段含义"><a href="#pkg-module-字段含义" class="headerlink" title="pkg.module 字段含义"></a><code>pkg.module</code> 字段含义</h2><ul>
+<li><code>pkg.module</code> 字段要指向的应该是一个<strong>基于 ES6 模块规范</strong>的<strong>使用 ES5 语法</strong>书写的模块</li>
+<li>基于 ES6 模块规范是为了用户在使用我们的包时可以享受 Tree Shaking 带来的好处；使用 ES5 语法书写是为了用户在配置 babel 插件时可以放心的屏蔽node_modules 目录</li>
 </ul>
-<h3 id="DPI"><a href="#DPI" class="headerlink" title="DPI"></a>DPI</h3><blockquote>
-<p>像素密度的单位 <code>dpi</code> 是 <code>Dots Per Inch</code> 的缩写，即每英寸像素数量</p>
-</blockquote>
-<ul>
-<li><code>Android</code> 系统定义了四种像素密度：低（120dpi）、中（160dpi）、高（240dpi）和超高（320dpi）</li>
-<li>它们对应的 <code>dp</code> 到<code>px</code> 的系数分别为 0.75、1、1.5 和 2，这个系数乘以 <code>dp</code> 长度就是像素数 <code>px</code></li>
-</ul>
-<h3 id="dp-dip"><a href="#dp-dip" class="headerlink" title="dp(dip)"></a>dp(dip)</h3><blockquote>
-<p><code>Density independent pixels</code>，设备无关像素</p>
-</blockquote>
-<ul>
-<li><code>dp</code> 与 <code>dip</code> 完全相同，只是名字不同而已。在早期的 <code>Android</code> 版本里多使用 <code>dip</code>，后来为了与 <code>sp</code> 统一就建议使用 <code>dp</code> 这个名字了</li>
-<li><code>dp</code> 与 <code>px</code> 换算公式如下： <code>dp = (DPI/160) px</code></li>
-</ul>
-<h3 id="为什么使用-160dpi-作为标准"><a href="#为什么使用-160dpi-作为标准" class="headerlink" title="为什么使用 160dpi 作为标准"></a>为什么使用 <code>160dpi</code> 作为标准</h3><ul>
-<li>因为第一款 <code>Android</code> 设备（HTC的T-Mobile G1）是属于 <code>160dpi</code> 的</li>
-<li>方便换算，其余三个分别是 <code>160dpi</code> 的 <code>0.75、1.5、2</code> 倍，若使用 <code>240dpi</code> 则会出现无限小数</li>
-</ul>
+<h3 id="相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时："><a href="#相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时：" class="headerlink" title="相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时："></a>相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时：</h3><ol>
+<li>如果它已经支持pkg.module字段则会优先使用 ES6 模块规范的版本，这样可以启用 Tree Shaking 机制。</li>
+<li>如果它还不识别pkg.module字段则会使用我们已经编译成 CommonJS 规范的版本，也不会阻碍打包流程。</li>
+</ol>
 
       
     </div>
@@ -434,7 +419,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/OS/" rel="tag"># OS</a>
+            <a href="/tags/npm/" rel="tag"># npm</a>
           
         </div>
       
@@ -447,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019-03-25-about-unicode/" rel="next" title="关于字符编码">
-                <i class="fa fa-chevron-left"></i> 关于字符编码
+              <a href="/2019-04-25-js-module/" rel="next" title="关于模块化规范">
+                <i class="fa fa-chevron-left"></i> 关于模块化规范
               </a>
             
           </div>
@@ -456,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019-04-05-git-workflow/" rel="prev" title="Git workflow">
-                Git workflow <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -589,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#px"><span class="nav-number">1.</span> <span class="nav-text">px</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DPI"><span class="nav-number">2.</span> <span class="nav-text">DPI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dp-dip"><span class="nav-number">3.</span> <span class="nav-text">dp(dip)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用-160dpi-作为标准"><span class="nav-number">4.</span> <span class="nav-text">为什么使用 160dpi 作为标准</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本号"><span class="nav-number">1.</span> <span class="nav-text">版本号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装指令"><span class="nav-number">2.</span> <span class="nav-text">安装指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于-package-lock-json-的更新"><span class="nav-number">3.</span> <span class="nav-text">关于 package-lock.json 的更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pkg-module-字段含义"><span class="nav-number">4.</span> <span class="nav-text">pkg.module 字段含义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时："><span class="nav-number">4.1.</span> <span class="nav-text">相当于在一个包内同时发布了两种模块规范的版本。当打包工具遇到我们的模块时：</span></a></li></ol></li></ol></div>
             
 
           </div>
